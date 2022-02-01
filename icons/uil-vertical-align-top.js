@@ -2,13 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const UilVerticalAlignTop = (props) => {
-  const { color, size, ...otherProps } = props
+  const { size, ...otherProps } = props
   return React.createElement('svg', {
     xmlns: 'http://www.w3.org/2000/svg',
     width: size,
     height: size,
     viewBox: '0 0 24 24',
-    fill: color,
+    className: 'iconscout_react_unicons iconscout_react_unicons_uil-vertical-align-top',
     ...otherProps
   }, React.createElement('path', {
     d: 'M21,2H3A1,1,0,0,0,3,4H6V21a1,1,0,0,0,1,1h6a1,1,0,0,0,1-1V16h3a1,1,0,0,0,1-1V4h3a1,1,0,0,0,0-2ZM12,20H8V4h4Zm4-6H14V4h2Z'
@@ -16,7 +16,6 @@ const UilVerticalAlignTop = (props) => {
 };
 
 UilVerticalAlignTop.propTypes = {
-  color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 };
 

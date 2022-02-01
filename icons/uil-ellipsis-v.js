@@ -2,13 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const UilEllipsisV = (props) => {
-  const { color, size, ...otherProps } = props
+  const { size, ...otherProps } = props
   return React.createElement('svg', {
     xmlns: 'http://www.w3.org/2000/svg',
     width: size,
     height: size,
     viewBox: '0 0 24 24',
-    fill: color,
+    className: 'iconscout_react_unicons iconscout_react_unicons_uil-ellipsis-v',
     ...otherProps
   }, React.createElement('path', {
     d: 'M12,7a2,2,0,1,0-2-2A2,2,0,0,0,12,7Zm0,10a2,2,0,1,0,2,2A2,2,0,0,0,12,17Zm0-7a2,2,0,1,0,2,2A2,2,0,0,0,12,10Z'
@@ -16,7 +16,6 @@ const UilEllipsisV = (props) => {
 };
 
 UilEllipsisV.propTypes = {
-  color: PropTypes.string,
   size: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 };
 
